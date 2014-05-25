@@ -1,0 +1,35 @@
+2014-05-25T19:45:19.857419+00:00 heroku[api]: Enable Logplex by chusmaellagarto@hotmail.com
+2014-05-25T19:45:19.857493+00:00 heroku[api]: Release v2 created by chusmaellagarto@hotmail.com
+2014-05-25T20:10:15+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T20:10:32.986109+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:10:33.093698+00:00 heroku[api]: Deploy dfd53b5 by chusmaellagarto@hotmail.com
+2014-05-25T20:10:33.093788+00:00 heroku[api]: Release v3 created by chusmaellagarto@hotmail.com
+2014-05-25T20:10:33+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T20:10:35.213356+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-05-25T20:10:37.502464+00:00 heroku[web.1]: Process exited with status 0
+2014-05-25T20:10:37.518861+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T20:10:37.521906+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T20:10:42.061934+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T20:11:07.237754+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:11:44.667894+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=mighty-bastion-6366.herokuapp.com request_id=1fcd17a5-b4f6-419f-aa32-94d4dc7f6d18 fwd="123.202.52.154" dyno= connect= service= status=503 bytes=
+2014-05-25T20:11:53.376919+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/chat host=mighty-bastion-6366.herokuapp.com request_id=9caded60-60ce-4e2f-92cd-b7000d4e0600 fwd="123.202.52.154" dyno= connect= service= status=503 bytes=
+2014-05-25T20:11:53.650487+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=mighty-bastion-6366.herokuapp.com request_id=bd2db2ae-3790-43ac-94c5-a9dfc37fd687 fwd="123.202.52.154" dyno= connect= service= status=503 bytes=
+2014-05-25T20:12:42.172000+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:13:08.051909+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:14:59.568647+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:22:02.528572+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
+2014-05-25T20:24:17.615566+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/ host=post-its.herokuapp.com request_id=41e0f583-d6cb-4aee-9f00-d3f1290a5243 fwd="123.202.52.154" dyno= connect= service= status=503 bytes=
+2014-05-25T20:24:18.013823+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=post-its.herokuapp.com request_id=9d1ab82e-4321-4107-9713-c634f40d2bad fwd="123.202.52.154" dyno= connect= service= status=503 bytes=
+2014-05-25T20:30:24+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-25T20:30:50+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-25T20:30:50.623978+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T20:30:50.525929+00:00 heroku[api]: Deploy e002a38 by chusmaellagarto@hotmail.com
+2014-05-25T20:30:50.525929+00:00 heroku[api]: Release v4 created by chusmaellagarto@hotmail.com
+2014-05-25T20:30:52.462589+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-05-25T20:30:55.238858+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T20:30:55.241395+00:00 heroku[web.1]: State changed from crashed to starting
+2014-05-25T20:30:55.228172+00:00 heroku[web.1]: Process exited with status 0
+2014-05-25T20:30:57.410739+00:00 heroku[web.1]: Starting process with command `node app.js`
+2014-05-25T20:31:00.095633+00:00 heroku[web.1]: State changed from starting to crashed
+2014-05-25T20:31:00.081020+00:00 heroku[web.1]: Process exited with status 0
+2014-05-25T20:31:39.221272+00:00 heroku[api]: Scale to web=1 by chusmaellagarto@hotmail.com
