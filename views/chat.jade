@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    a#changeCSS(href='#') changeCSS
+
+    div#showMessages
+        each message, i in messages
+          //- p.adjust
+          div.post-it.message
+            a.deleteMessage(href='#',rel=message._id) x
+            p.userName
+              td=message.username
+              //-  +":"
+            p.message
+              td=message.message
+    div#writtingArea.post-it
+      select#selectUserName.inputT(type="text", placeholder="Username", name="username")
+      textarea#inputMessage.inputT(type="text", placeholder="Message", name="message")
+      a#addMessage.addMessage(href='#') add
+      button#btnAddMessage.addMessage Send
