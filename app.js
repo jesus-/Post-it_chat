@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var db;
 //if the enviroment is production we will use a different ddbb than in development
+console.log("********we are at "+app.get('env') );
 if (app.get('env') === 'production') {
    db = monk(process.env.MONGOHQ_URL);
 }else{
