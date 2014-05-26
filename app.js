@@ -29,11 +29,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 var db;
 //if the enviroment is production we will use a different ddbb than in development
 console.log("********we are at "+app.get('env') );
-if (app.get('env') === 'production') {
+// if (app.get('env') === 'production') {
    db = monk(process.env.MONGOHQ_URL);
-}else{
-   db = monk('localhost:27017/chat');
-}
+// }else{
+//    db = monk('localhost:27017/chat');
+// }
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;

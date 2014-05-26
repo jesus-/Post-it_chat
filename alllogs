@@ -1,0 +1,103 @@
+2014-05-26T13:38:25.414300+00:00 heroku[web.1]: Starting process with command `node bin/www`
+2014-05-26T14:43:36.870310+00:00 heroku[web.1]: State changed from up to down
+2014-05-26T14:43:36.869492+00:00 heroku[web.1]: Idling
+2014-05-26T14:43:39.219063+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-05-26T14:43:40.840087+00:00 heroku[web.1]: Process exited with status 143
+2014-05-26T15:25:17.758992+00:00 heroku[web.1]: Unidling
+2014-05-26T15:25:17.759323+00:00 heroku[web.1]: State changed from down to starting
+2014-05-26T15:25:20.152239+00:00 heroku[web.1]: Starting process with command `node bin/www`
+2014-05-26T15:25:22.864821+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=08fce05e-f4d9-4d78-8700-d3d2d45e6719 fwd="2.136.229.71" dyno=web.1 connect=2ms service=448ms status=200 bytes=892
+2014-05-26T15:25:23.161252+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=995c063c-5ab7-42d0-a38e-5f7b3c195e82 fwd="2.136.229.71" dyno=web.1 connect=1ms service=18ms status=200 bytes=6967
+2014-05-26T15:25:23.160970+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=3df6910e-c6ce-426a-8b0b-eeb24dc83df8 fwd="2.136.229.71" dyno=web.1 connect=2ms service=13ms status=200 bytes=1869
+2014-05-26T15:25:22.860803+00:00 app[web.1]: [90mGET /chat [32m200 [90m436ms - 714b[0m
+2014-05-26T15:25:23.383549+00:00 heroku[router]: at=info method=GET path=/images/WoodLow1.jpg host=post-its.herokuapp.com request_id=29ea285b-ac75-4b44-b9cf-7c09be6768e4 fwd="2.136.229.71" dyno=web.1 connect=1ms service=6ms status=200 bytes=52108
+2014-05-26T15:25:23.395272+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=8aa0d67d-0685-40ba-b00b-ce4e56334844 fwd="2.136.229.71" dyno=web.1 connect=1ms service=11ms status=200 bytes=887
+2014-05-26T15:25:23.162724+00:00 app[web.1]: [90mGET /javascripts/globals.js [32m200 [90m13ms - 6.53kb[0m
+2014-05-26T15:25:23.162733+00:00 app[web.1]: [90mGET /stylesheets/postit.css [32m200 [90m8ms - 1.55kb[0m
+2014-05-26T15:25:23.374998+00:00 app[web.1]: [90mGET /images/WoodLow1.jpg [32m200 [90m1ms - 50.62kb[0m
+2014-05-26T15:25:23.391013+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m7ms - 716b[0m
+2014-05-26T15:25:23.872437+00:00 heroku[router]: at=info method=DELETE path=/deletemessage/5383134c6a67ae020051af38 host=post-its.herokuapp.com request_id=70da7873-df32-4569-99fc-196e50f43846 fwd="2.136.229.71" dyno=web.1 connect=1ms service=35ms status=404 bytes=1164
+2014-05-26T15:25:23.876043+00:00 heroku[router]: at=info method=GET path=/users?format=json host=post-its.herokuapp.com request_id=59dab1b6-53be-4706-aedc-ba412b519fad fwd="2.136.229.71" dyno=web.1 connect=4ms service=43ms status=304 bytes=129
+2014-05-26T15:25:22.129224+00:00 heroku[web.1]: State changed from starting to up
+2014-05-26T15:25:23.868704+00:00 app[web.1]: [90mGET /users?format=json [36m304 [90m41ms[0m
+2014-
+05-26T15:25:23.866495+00:00 app[web.1]: [90mDELETE /deletemessage/5383134c6a67ae020051af38 [33m404 [90m30ms - 998b[0m
+2014-05-26T16:30:00.855694+00:00 heroku[web.1]: Idling
+2014-05-26T16:30:00.856332+00:00 heroku[web.1]: State changed from up to down
+2014-05-26T16:30:04.733172+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-05-26T16:30:06.879541+00:00 heroku[web.1]: Process exited with status 143
+2014-05-26T16:34:14+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-26T16:34:22.137408+00:00 heroku[api]: Deploy 99998c7 by chusmaellagarto@hotmail.com
+2014-05-26T16:34:22.137509+00:00 heroku[api]: Release v14 created by chusmaellagarto@hotmail.com
+2014-05-26T16:34:22+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-26T16:56:45+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-26T16:56:51+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-26T16:56:51.187309+00:00 heroku[api]: Deploy 76f4425 by chusmaellagarto@hotmail.com
+2014-05-26T16:56:51.187400+00:00 heroku[api]: Release v15 created by chusmaellagarto@hotmail.com
+2014-05-26T16:57:43.601086+00:00 heroku[web.1]: Unidling
+2014-05-26T16:57:43.601437+00:00 heroku[web.1]: State changed from down to starting
+2014-05-26T16:57:46.649616+00:00 heroku[web.1]: State changed from starting to up
+2014-05-26T16:57:47.725287+00:00 heroku[router]: at=info method=GET path=/ host=post-its.herokuapp.com request_id=33a7168f-46b7-4b73-8a5c-1d6ebc3856f6 fwd="123.202.52.154" dyno=web.1 connect=5ms service=25ms status=302 bytes=270
+2014-05-26T16:57:47.721985+00:00 app[web.1]: [90mGET / [36m302 [90m10ms - 66b[0m
+2014-05-26T16:57:48.401039+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=2f18dd35-e155-4826-b960-38e52b5a9cc1 fwd="123.202.52.154" dyno=web.1 connect=1ms service=412ms status=304 bytes=127
+2014-05-26T16:57:48.403064+00:00 app[web.1]: [90mGET /chat [36m304 [90m409ms[0m
+2014-05-26T16:57:48.735196+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=ecb4028c-9307-4432-9494-005251d6edc0 fwd="123.202.52.154" dyno=web.1 connect=2ms service=10ms status=200 bytes=6967
+2014-05-26T16:57:48.727478+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=30d9b4e5-59f5-46d0-891a-0834f412fb73 fwd="123.202.52.154" dyno=web.1 connect=1ms service=10ms status=200 bytes=1869
+2014-05-26T16:57:48.735888+00:00 app[web.1]: [90mGET /javascripts/globals.js [32m200 [90m4ms - 6.53kb[0m
+2014-05-26T16:57:48.734442+00:00 app[web.1]: [90mGET /stylesheets/postit.css [32m200 [90m8ms - 1.55kb[0m
+2014-05-26T16:57:49.001767+00:00 heroku[router]: at=info method=GET path=/images/WoodLow1.jpg host=post-its.herokuapp.com request_id=ce172003-45fc-463e-bfcf-1854acbdd668 fwd="123.202.52.154" dyno=web.1 connect=1ms service=8ms status=200 bytes=52108
+2014-05-26T16:57:49.063807+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=a8aa7c35-49bc-435e-a549-94df75cb86e1 fwd="123.202.52.154" dyno=web.1 connect=5ms service=11ms status=200 bytes=163
+2014-05-26T16:57:49.003984+00:00 app[web.1]: [90mGET /images/WoodLow1.jpg [32m200 [90m1ms - 50.62kb[0m
+2014-05-26T16:57:49.064552+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m7ms[0m
+2014-05-26T16:57:45.339794+00:00 heroku[web.1]: Starting process with command `node bin/www`
+2014-05-26T16:58:23.989638+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=5ac73f3e-e27b-4c49-94f0-6d622292109b fwd="123.202.52.154" dyno=web.1 connect=3ms service=53ms status=304 bytes=127
+2014-05-26T16:58:23.994217+00:00 app[web.1]: [90mGET /chat [36m304 [90m51ms[0m
+2014-05-26T16:58:24.242348+00:00 app[web.1]: [90mGET /stylesheets/postit.css [36m304 [90m2ms[0m
+2014-05-26T16:58:24.242331+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=94bcbc5c-9777-4ca4-ab54-987a2a0edfea fwd="123.202.52.154" dyno=web.1 connect=1ms service=9ms status=304 bytes=232
+2014-05-26T16:58:24.237031+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=2c188efc-4529-4bc0-9cb7-188e340105fa fwd="123.202.52.154" dyno=web.1 connect=2ms service=6ms status=304 bytes=232
+2014-05-26T16:58:24.241900+00:00 app[web.1]: [90mGET /javascripts/globals.js [36m304 [90m3ms[0m
+2014-05-26T16:58:24.507397+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=d9c8e692-aecb-498a-a6a9-93de81deae10 fwd="123.202.52.154" dyno=web.1 connect=1ms service=7ms status=200 bytes=163
+2014-05-26T16:58:24.510612+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m5ms[0m
+2014-05-26T16:59:06.279132+00:00 heroku[router]: at=info method=GET path=/messages host=post-its.herokuapp.com request_id=6bab32fe-d397-4a1e-8318-30709ea5bcd6 fwd="123.202.52.154" dyno=web.1 connect=1ms service=8ms status=200 bytes=163
+2014-05-26T16:59:06.280257+00:00 app[web.1]: [90mGET /messages [32m200 [90m6ms[0m
+2014-05-26T16:59:56.732491+00:00 heroku[router]: at=info method=GET path=/ host=post-its.herokuapp.com request_id=aa021314-96b9-4067-97fd-911263b9aba1 fwd="123.202.52.154" dyno=web.1 connect=1ms service=10ms status=302 bytes=270
+2014-05-26T16:59:56.730569+00:00 app[web.1]: [90mGET / [36m302 [90m2ms - 66b[0m
+2014-05-26T16:59:57.062867+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=90f6d4ec-c26f-487c-b68a-f31ad994c32e fwd="123.202.52.154" dyno=web.1 connect=3ms service=51ms status=304 bytes=127
+2014-05-26T16:59:57.296917+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=58b56840-1c55-4c5f-899c-3a381b0568c4 fwd="123.202.52.154" dyno=web.1 connect=1ms service=4ms status=304 bytes=232
+2014-05-26T16:59:57.300153+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=fe80b7eb-140c-4ccf-857a-d53bf3a7e6ca fwd="123.202.52.154" dyno=web.1 connect=1ms service=4ms status=304 bytes=232
+2014-05-26T16:59:57.066866+00:00 app[web.1]: [90mGET /chat [36m304 [90m47ms[0m
+2014-05-26T16:59:57.305304+00:00 app[web.1]: [90mGET /stylesheets/postit.css [36m304 [90m1ms[0m
+2014-05-26T16:59:57.302017+00:00 app[web.1]: [90mGET /javascripts/globals.js [36m304 [90m1ms[0m
+2014-05-26T16:59:57.560833+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=dad66d17-bff6-4406-b094-40c92b0d44f7 fwd="123.202.52.154" dyno=we
+b.1 connect=1ms service=7ms status=200 bytes=163
+2014-05-26T16:59:57.566125+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m4ms[0m
+2014-05-26T17:05:33+00:00 heroku[slug-compiler]: Slug compilation started
+2014-05-26T17:05:44.048649+00:00 heroku[api]: Release v16 created by chusmaellagarto@hotmail.com
+2014-05-26T17:05:44.048510+00:00 heroku[api]: Deploy e8d70e1 by chusmaellagarto@hotmail.com
+2014-05-26T17:05:44+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-05-26T17:05:44.189238+00:00 heroku[web.1]: State changed from up to starting
+2014-05-26T17:05:47.007325+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-05-26T17:05:47.993767+00:00 app[web.1]: ********we are at development
+2014-05-26T17:05:48.703068+00:00 heroku[web.1]: State changed from starting to up
+2014-05-26T17:05:50.658508+00:00 heroku[router]: at=info method=GET path=/ host=post-its.herokuapp.com request_id=4066e19e-403a-4e07-a124-95606e3baee8 fwd="123.202.52.154" dyno=web.1 connect=0ms service=27ms status=302 bytes=270
+2014-05-26T17:05:50.659836+00:00 app[web.1]: [90mGET / [36m302 [90m17ms - 66b[0m
+2014-05-26T17:05:46.282221+00:00 heroku[web.1]: Starting process with command `node bin/www`
+2014-05-26T17:05:51.592076+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=8d578455-5cd3-469b-9d81-6709ca8cbb46 fwd="123.202.52.154" dyno=web.1 connect=4ms service=684ms status=304 bytes=127
+2014-05-26T17:05:51.593958+00:00 app[web.1]: [90mGET /chat [36m304 [90m681ms[0m
+2014-05-26T17:05:51.878457+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=4f6010b4-362c-4d57-8c37-e529a2117871 fwd="123.202.52.154" dyno=web.1 connect=2ms service=33ms status=200 bytes=6967
+2014-05-26T17:05:51.901432+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=b92e13cf-5fe6-4de4-bbe7-496de6248f4d fwd="123.202.52.154" dyno=web.1 connect=7ms service=36ms status=200 bytes=1868
+2014-05-26T17:05:51.898200+00:00 app[web.1]: [90mGET /stylesheets/postit.css [32m200 [90m21ms - 1.55kb[0m
+2014-05-26T17:05:51.882392+00:00 app[web.1]: [90mGET /javascripts/globals.js [32m200 [90m31ms - 6.53kb[0m
+2014-05-26T17:05:52.183162+00:00 heroku[router]: at=info method=GET path=/images/WoodLow1.jpg host=post-its.herokuapp.com request_id=2766c97d-bc4b-49e7-a6eb-4e15a6d60ee4 fwd="123.202.52.154" dyno=web.1 connect=1ms service=12ms status=200 bytes=52107
+2014-05-26T17:05:49.276122+00:00 heroku[web.1]: Process exited with status 143
+2014-05-26T17:05:52.261087+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=9572f61b-4745-4cf8-9f11-b7cb0149080b fwd="123.202.52.154" dyno=web.1 connect=1ms service=33ms status=200 bytes=163
+2014-05-26T17:05:52.183248+00:00 app[web.1]: [90mGET /images/WoodLow1.jpg [32m200 [90m8ms - 50.62kb[0m
+2014-05-26T17:05:52.260797+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m27ms[0m
+2014-05-26T17:06:39.410836+00:00 heroku[router]: at=info method=GET path=/chat host=post-its.herokuapp.com request_id=2089ad21-023c-4561-b6a2-978157e53bf5 fwd="123.202.52.154" dyno=web.1 connect=1ms service=64ms status=304 bytes=127
+2014-05-26T17:06:39.409571+00:00 app[web.1]: [90mGET /chat [36m304 [90m62ms[0m
+2014-05-26T17:06:39.660880+00:00 heroku[router]: at=info method=GET path=/javascripts/globals.js host=post-its.herokuapp.com request_id=2d1076e9-0c94-4692-b359-6ee3d8441241 fwd="123.202.52.154" dyno=web.1 connect=2ms service=4ms status=304 bytes=232
+2014-05-26T17:06:39.663379+00:00 heroku[router]: at=info method=GET path=/stylesheets/postit.css host=post-its.herokuapp.com request_id=932fb1eb-e7f4-4589-a983-c182ab282002 fwd="123.202.52.154" dyno=web.1 connect=2ms service=7ms status=304 bytes=231
+2014-05-26T17:06:39.660614+00:00 app[web.1]: [90mGET /stylesheets/postit.css [36m304 [90m4ms[0m
+2014-05-26T17:06:39.661699+00:00 app[web.1]: [90mGET /javascripts/globals.js [36m304 [90m1ms[0m
+2014-05-26T17:06:40.014632+00:00 heroku[router]: at=info method=GET path=/messages?format=json host=post-its.herokuapp.com request_id=7ad6936d-bf94-4277-9830-df37bd396fa3 fwd="123.202.52.154" dyno=web.1 connect=1ms service=7ms status=200 bytes=163
+2014-05-26T17:06:40.013618+00:00 app[web.1]: [90mGET /messages?format=json [32m200 [90m5ms[0m
