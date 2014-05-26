@@ -48,7 +48,7 @@ body{
 a#changeCSS{
   color: #FFFFFF;
   position:fixed;
-  right:5px;
+  right:30px;
   top:0px;
 }
 a.deleteMessage{
