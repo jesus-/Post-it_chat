@@ -1,5 +1,5 @@
 html{
-  background: url(../images/WoodLow.jpg) no-repeat center center fixed;
+  background: url(../images/WoodLow1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,7 +28,7 @@ a.deleteMessage{
 a#changeCSS{
   color: #FFFFFF;
   position:fixed;
-  right:5px;
+  right:30px;
   top:0px;
 }
 /*#showMessages{
@@ -58,7 +58,7 @@ a#changeCSS{
 
 }
 #selectUserName{
-  height:20px;
+  height:25px;
 }
 .post-it {
   position:relative;
