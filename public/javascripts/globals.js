@@ -6,8 +6,6 @@ $(document).ready(function(){
     loadMessages();
     // add event on click  addMessage to all the class .addMessage.
     $('.addMessage').on('click', addMessage);
-    // add event on click deleteMessage to all the anchors of class deleteMessage
-    $('a.deleteMessage').on('click', deleteMessage);
     // add event to changeCSS id anchor
     $('a#changeCSS').on('click',changeCSS);
 
@@ -193,6 +191,9 @@ function loadMessages(){
       }
       // Load the Users, into the select, of select user
       loadUsers();
+      // add event on click deleteMessage to all the anchors of class deleteMessage
+      $('a.deleteMessage').on('click', deleteMessage);
+
       $("#showMessages").scrollTop($("#showMessages")[0].scrollHeight);
 
     });
