@@ -7,10 +7,6 @@ var bodyParser = require('body-parser');
 
 var mongo = require('mongodb');
 var monk = require('monk');
-//var db = monk('localhost:27017/chat');
-var db = monk(process.env.MONGOHQ_URL);
-//console.log(process.env.MONGOHQ_URL);
-//var db = monk(process.env.MONGOHQ_URL);
 
 //define the files of routes
 var routes = require('./routes/index');
@@ -30,6 +26,13 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var db;
+//if the enviroment is production we will use a different ddbb than in development
+if (app.get('env') === 'production') {
+   db = monk(process.env.MONGOHQ_URL);
+}else{
+   db = monk('localhost:27017/chat');
+}
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;
