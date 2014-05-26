@@ -9,8 +9,10 @@ var mongo = require('mongodb');
 var monk = require('monk');
 //var db = monk('localhost:27017/chat');
 var db = monk('mongodb://admin:admin@oceanic.mongohq.com:10057/chat');
+//define the files of routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var messages = require('./routes/messages');
 
 var app = express();
 
@@ -30,8 +32,10 @@ app.use(function(req,res,next){
     req.db = db;
     next();
 });
+//define the routes.
 app.use('/', routes);
 app.use('/users', users);
+app.use('/messages', messages);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

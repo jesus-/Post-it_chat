@@ -1,30 +1,11 @@
-
-// exports.view = function(req, res){
-//   res.render('users/view', {
-//     title: 'Viewing user ' + req.user.name,
-//     user: req.user
-//   });
-// };
+var express = require('express');
+var router = express.Router();
 
 
-
-//router.get('/chat', function(req, res) {
-exports.view = function(req, res){
-    var db = req.db;
-    var collection = db.get('messages');
-    collection.find({},{},function(e,docs){
-        res.render('chat', {
-            "messages" : docs
-        });
-    });
-};
-/* POST to Add message */
-// router.post('/addmessage', function(req, res) {
-exports.addmessage = function(req, res){
-
+router.post('/', function(req, res) {
+//exports.addmessage = function(req, res){
     // Set our internal DB variable
     var db = req.db;
-
     // Get our form values. These rely on the "name" attributes
     var userName = req.body.username;
     var message = req.body.message;
@@ -37,14 +18,15 @@ exports.addmessage = function(req, res){
         "username" : userName,
         "message" : message
     }, function (err, doc) {
-        console.log(err);
-        console.log(doc);
-        res.send((err === null) ? { msg: '' } : { msg:'error: ' + err });
+        // console.log(err);
+        // console.log(doc);
+        res.send((err === null) ? { msg: '', _id:doc._id} : { msg:'error: ' + err });
     });
-};
+});
+
 // /* Delete message */
-//router.delete('/deletemessage/:id', function(req, res) {
-exports.deletemessage = function(req, res){
+router.delete('/:id', function(req, res) {
+// exports.deletemessage = function(req, res){
 
     // Set our internal DB variable
     var db = req.db;
@@ -55,6 +37,18 @@ exports.deletemessage = function(req, res){
 
     // Submit to the DB
       collection.remove({_id:messageToDelete}, function (err, doc) {
-      res.send((doc === 1) ? { msg: '' } : { msg:'error: ' + err });
+      res.send((doc === 1) ? { msg: '',_id:messageToDelete } : { msg:'error: ' + err });
     });
-};
+});
+
+//get messages
+router.get('/', function(req, res) {
+    var db = req.db;
+    var collection = db.get('messages');
+    collection.find({},{},function(e,docs){
+        res.json(docs);
+    });
+});
+
+
+module.exports = router;
