@@ -8,7 +8,10 @@ var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var monk = require('monk');
 //var db = monk('localhost:27017/chat');
-var db = monk('mongodb://admin:admin@oceanic.mongohq.com:10057/chat');
+var db = monk(process.env.MONGOHQ_URL);
+//console.log(process.env.MONGOHQ_URL);
+//var db = monk(process.env.MONGOHQ_URL);
+
 //define the files of routes
 var routes = require('./routes/index');
 var users = require('./routes/users');
