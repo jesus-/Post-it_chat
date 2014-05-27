@@ -40,6 +40,7 @@ app.use(function(req,res,next){
     next();
 });
 //define the routes.
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/messages', messages);

@@ -1,0 +1,99 @@
+@import "elements.less";
+
+@color-post-it: #fefabc;
+@color-delete-message:#FF0000;
+@color-add-message:#00B7FF;
+
+html{
+  background: url(../images/WoodLow1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding:50px;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+//
+div.post-it {
+  position:relative;
+  float:left;
+  background:@color-post-it;
+  padding:5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:15px;
+  color: #000;
+  width:150px;
+  height:100px;
+  margin:5px;
+  overflow:scroll;
+
+  .box-shadow(0px 4px 6px #333);
+
+  // box-shadow: 0px 4px 6px #333;
+  // -moz-box-shadow: 0px 4px 6px #333;
+  // -webkit-box-shadow: 0px 4px 6px #333;
+  //  .border-radius(60px 10px, 0, 0, 0);
+  -webkit-border-bottom-right-radius: 60px 10px;
+  -moz-border-radius-bottomright: 60px 10px;
+  border-bottom-right-radius: 60px 10px;
+
+}
+
+a#addMessage{
+  position:absolute;
+  right:5px;
+  bottom:4px;
+  color: @color-add-message;
+}
+//class deleteMessage, cause there are a lot of anchors, no by id
+a.deleteMessage{
+  color: @color-delete-message;
+  position:absolute;
+  right:5px;
+  top:-4px;
+  text-decoration: none;
+}
+a#changeCSS{
+  color: #FFFFFF;
+  position:fixed;
+  right:30px;
+  top:0px;
+}
+
+#writtingArea {
+    width:160px;
+}
+.inputT{
+  background:@color-post-it;
+  color: inherit;
+  font-family: inherit;
+  background: inherit;
+  border:0px;
+  font-size:15px;
+
+}
+input#inputMessage{
+  height:70px;
+  width:130px;
+
+}
+select#selectUserName{
+  height:25px;
+}
+
+p.userName{
+  margin-top:2px;
+  margin-bottom:2px;
+  font-weight:bold;
+}
+p.message{
+  margin-top:2px;
+  margin-bottom:2px;
+}
+button#btnAddMessage{
+  visibility:hidden;
+}

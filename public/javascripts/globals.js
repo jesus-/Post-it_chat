@@ -96,17 +96,15 @@ function setRandomInclination(element){
 
 }
 
-function setZeroInclination(element){
-// set not rotation to properties
-  var rotation = "rotate(0deg)";
-
-  $(element).css( "-moz-transform", rotation );
-  $(element).css( "-webkit-transform", rotation );
-  $(element).css( "-o-transform", rotation );
-  $(element).css( "-ms-transform", rotation );
-  $(element).css( "transform", rotation );
-
-}
+ function zeroInclination(element){
+ // set not rotation to properties
+   var rotation = "rotate(0deg)";
+   $(element).css( "-moz-transform", rotation );
+   $(element).css( "-webkit-transform", rotation );
+   $(element).css( "-o-transform", rotation );
+   $(element).css( "-ms-transform", rotation );
+   $(element).css( "transform", rotation );
+ }
 
 function changeCSS(){
 
@@ -123,7 +121,7 @@ function changeCSS(){
     //if we are at postit.css change to chat.css
     document.getElementsByTagName('link').item(0).setAttribute('href','/stylesheets/chat.css');
     $( ".post-it" ).each(function(i,element) {
-      setZeroInclination(element);
+      zeroInclination(element);
     });
     // console.log($("#showMessages")[0].scrollHeight);
     // $("#showMessages").scrollTop($("#showMessages")[0].scrollHeight);
@@ -163,8 +161,7 @@ function loadUsers(){
       });//when finished select the 0
 
       $('#selectUserName').on('change',function(){
-          var hola= this.value;
-          var adios =getColorFromUsuario(this.value);
+
           $(this).parent().css("background", getColorFromUsuario(this.value));
       });
 

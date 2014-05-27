@@ -2,10 +2,26 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/postit.css')
+    block css-page
+    //- link(rel='stylesheet', href='/stylesheets/postit.css')
     //- link(rel='stylesheet', href='/stylesheets/chat.css')
 
   body
-    block content
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-    script(src='/javascripts/globals.js')
+    a#changeCSS(href='#') changeCSS
+    div#showMessages
+    //-structure of how a message is going to be
+        //- each message, i in messages
+        //-   div.post-it.message
+        //-     a.deleteMessage(href='#',rel=message._id) x
+        //-     p.userName
+        //-       td=message.username
+        //-     p.message
+        //-       td=message.message
+    div#writtingArea.post-it
+      select#selectUserName.inputT(type="text", placeholder="Username", name="username")
+      textarea#inputMessage.inputT(type="text", placeholder="Message", name="message")
+      a#addMessage.addMessage(href='#') add
+      button#btnAddMessage.addMessage Send
+
+  script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+  script(src='/javascripts/globals.js')
