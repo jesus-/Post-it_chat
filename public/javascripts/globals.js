@@ -5,7 +5,11 @@
 $(document).ready(function(){
     loadMessages();
     // add event on click  addMessage to all the class .addMessage.
-    $('.addMessage').on('click', addMessage);
+    // $('.addMessage').on('click', addMessage);
+     $('.addMessage').on('click', function(){
+       addMessage($('#selectUserName').val(),$('#inputMessage').val(),domAddMessage);
+     });
+
     // add event to changeCSS id anchor
     $('a#changeCSS').on('click',changeCSS);
 
@@ -44,13 +48,9 @@ function deleteMessage(event) {
     }
 
 }
-function addMessage(event) {
 
-    event.preventDefault();
-    // get the insert elements
-    var userName = $('#selectUserName').val();
-    var message =$('#inputMessage').val();
-    //create json variable with the data
+//Make a post call to add the user
+function postMessage(userName,message,callback){
     var newMessage = {
         'username': userName,
         'message': message,
@@ -60,27 +60,27 @@ function addMessage(event) {
         data: newMessage,
         url: '/messages'
     }).done(function( response ) {
-
-      // Check for a successful (blank) response
       if (response.msg === '') {
-          //append the new member
-          $( "div#showMessages" ).append(createStringAddMessage(userName,message,response._id));
-          //scroll down to end of div showMessages
-          $("#showMessages").scrollTop($("#showMessages")[0].scrollHeight);
-          //make ""input of messages nad focus
-          $("#inputMessage").val("");
-          $('#inputMessage').focus();
-          //add event deleteMessage to the anchor
-          $('.deleteMessage').last().on('click', deleteMessage);
-          //add color to the new message
-          var colornew = getColorFromUsuario(userName);
-          $('div.message').last().css( "background", colornew);
-      }
-      else {
-          alert('Error: ' + response.msg);
+        callback(userName,message,response._id);
+      }else{
+           alert('Error: ' + response.msg);
       }
     });
+}
 
+//add the user to the DOM
+function domAddMessage(userName,message, _id){
+    $( "div#showMessages" ).append(createStringAddMessage(userName,message,response._id));
+    //scroll down to end of div showMessages
+    $("#showMessages").scrollTop($("#showMessages")[0].scrollHeight);
+    //make ""input of messages nad focus
+    $("#inputMessage").val("");
+    $('#inputMessage').focus();
+    //add event deleteMessage to the anchor
+    $('.deleteMessage').last().on('click', deleteMessage);
+    //add color to the new message
+    var colornew = getColorFromUsuario(userName);
+    $('div.message').last().css( "background", colornew);
 }
 function setRandomInclination(element){
 
@@ -196,3 +196,4 @@ function loadMessages(){
     });
 
 }
+module.exports.createStringAddMessage = createStringAddMessage;
